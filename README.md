@@ -14,7 +14,6 @@ Before you start using or setting up TriviaTonic, ensure you have the following 
 
 - **.NET Framework (latest version)**: Required to run the MVC project.
 - **Visual Studio**: For development and running the project.
-- **SQL Server**: For database storage (if applicable).
 - **API Token**: Get your API token by registering on [QuizAPI](https://quizapi.io/).
 
 ## Setting Up the Project

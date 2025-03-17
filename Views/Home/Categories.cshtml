@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Category>;
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="container mt-5">
+    <div class="row" id="cardContainer">
+        @foreach (var category in Model)
+        {
+            <div class="col-md-6 col-lg-4 FreeQuiz mt-4" data-category="@category.CategoryName">
+                <a class="card text-white text-center bg-img py-6 myCard text-decoration-none" href="/Quiz/Index?Category=@category.CategoryName"
+                   data-overlay="7" name='WordPress'>
+                    <div class="overlay"></div>
+                    <div class="position-relative">
+                        <p class="mt-3" id="addIcon"></p>
+                        <h4 class="mb-0">@category.CategoryName </h4>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<script src="~/js/categories.js"></script> <!-- Reference to the external JavaScript file -->
